@@ -1,0 +1,1107 @@
+
+/* CSS for Valiant Esports Website
+   Student Name: Ronquillo, Michael Arnold
+   Section: WD-201
+   Site Name: Valiant Esports
+   Date: October 30, 2023 - November 2023 */
+	
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside,table, audio, video
+	{margin: 0;
+	padding: 0;
+	border: 0;}
+
+/*CSS styles for body and images*/
+body {
+	background-color: #000; 
+}  
+
+img, video{max-width: 100%;
+	 display: block;
+	} 
+
+video {
+		margin: 0 auto 4%;
+		border-left:1px solid #ccc; 
+		border-right: 3px solid #fcc200;
+		border-bottom: 3px solid #fcc200;
+		box-shadow: 3px 3px 4px #000;
+	}
+
+/* Style rule for box sizing apples to all elements */
+* {
+	box-sizing: border-box;
+}
+
+/*CSS styles for header*/
+header .tablet-desktop {
+		top: 0;
+		color: white;
+		height: 190px;
+}
+
+header .mobile {
+	background: linear-gradient(to bottom, #000, #000, #000, #fff);
+}
+
+header img {
+	margin:0 auto;
+	width: 75px;
+
+} 
+
+header h1{
+	font-size: 1.75em;
+	text-align: center;
+}
+
+/*CSS styles for navigation area*/
+
+.link{
+	text-decoration: none;
+	color: #fcc200;
+}
+
+main #exit {
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+}
+
+/*======================================================================*/
+/*Show mobile class, hide tablet-desktop class*/
+
+.mobile, .mob-tab, .mobile-nav, #menu-links{
+	display: block;
+}
+
+.tablet-desktop, .desk {display:none;}
+
+/*CSS styles for nav*/
+
+  .mobile-nav {
+	overflow: hidden;
+	background-color: #000;
+	position: relative;
+  }
+  
+  .mobile-nav #menu-links {
+	display: none;
+  }
+  
+  .mobile-nav a {
+	color: white;
+	font-family: 'Francois One', sans-serif;
+	padding-top: 2em;
+	padding: 16px 16px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+	display: block;
+	border-bottom: 1px solid #fff;
+  }
+  
+  .mobile-nav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .mobile-nav a:hover {
+	background-color: #fff;
+	color: #000;
+  }
+
+  .active {
+	background-color: #000;
+	color: white;
+  }
+
+/*CSS styles for main section*/
+main {
+	  clear: left;
+	  font-size: 1em;
+	  line-height: 2em;
+	  font-family: 'Roboto', sans-serif;
+	  color: #fff;
+	  text-shadow: 5px 5px 8px #000;
+	  text-justify: inter-word;
+	  padding: 3%;
+	}
+
+.mobile h3 {
+	text-shadow: 5px 5px 5px #ccc;
+}
+
+#about-val h2{
+	text-align: center;
+}
+
+#about-val h3{
+	font-size: 1.25em;
+}
+
+#about-val p{
+	text-indent:2em;
+	text-align: justify;
+}
+
+.action {
+	font-size: 0.60em;
+	font-weight: bold;
+	text-shadow: 5px 5px 8px gray; 
+}
+
+#exec-mob h3 {
+	font-size: 1em;
+	text-shadow: none;
+}
+
+
+#exec-mob p {
+	font-size: .75em;
+	text-shadow: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*CSS styles for footer*/
+footer {
+	padding-top: 0em;
+}
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0.1em;
+	font-family: 'Martian Mono', monospace;
+	line-height: 0.15em;
+}
+
+#email {
+	text-align: center;
+	text-decoration: none; 
+	font-family: 'Martian Mono', monospace; 
+	color: #fff; 
+	font-size: 0.75em;
+	margin: auto auto ;
+	font-weight: bolder;
+}
+
+.copyright{
+	border-top: 1px solid #fff;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.social {
+	margin: 0 auto;
+	width: 15%;
+	text-align: center;
+}
+
+.social img {
+	display: inline-block;
+	padding: 4%;
+	width: 40%;
+	}
+
+footer {
+	overflow: auto;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 200px;
+	grid-gap: 20px;
+	padding-top: 0;
+	justify-content: center;
+} 
+
+.grid-news {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 30px;
+	padding-top: 0;
+	justify-content: center;
+	top: auto;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.heading h1 {
+	font-size: 1.15em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.main-news img {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.news-content h2{
+	font-size: 1em;
+}
+
+.news-content h3{
+	font-size: .75em;
+}
+
+.news-content p{
+	font-size: .65em;
+	text-align: justify;
+	padding-bottom: 1em;
+}
+
+.grid-news-content aside {
+	font-size: .75em;
+}
+
+.grid-news-content figure {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+}
+
+.grid-news-content figure figcaption {
+	font-size: .5em;
+}
+
+aside{
+	grid-column: 1 / span 1;
+	
+}
+
+aside p {
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	text-shadow: 5px 5px 8px #000;
+}
+figure {
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc; 
+	border-right: 3px solid #fcc200;
+	border-bottom: 3px solid #fcc200;
+	background-color: #000;
+	padding: 1em 1em;
+	box-shadow: 3px 3px 4px #ccc;
+	border-radius: 8px;
+}
+
+figure a {
+	color: #fff;
+	text-decoration: none;
+}
+
+figcaption {
+	text-align: center;
+}
+
+/* Style rules for form elements */
+
+#contact-img{
+	display: none; 
+}
+
+form #submit {
+	margin: 0 auto;
+	padding: 2%;
+	background-color: #000;
+	color: #f6eee4;
+	font-size: 1em;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 1px 1px 4px #ccc;
+}  
+
+form #reset {
+	margin: 0 auto;
+	padding: 2%;
+	background-color: #000;
+	color: #f6eee4;
+	font-size: 1em;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 1px 1px 4px #ccc;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+} 
+
+label {
+	height: 100%;
+	padding: 10px;
+	color: #fff;
+	cursor: text;
+}
+
+#contact {
+	margin-bottom: 5em;
+}
+
+#contact, #form h2 {
+	text-align: center;
+}
+
+/* Style rules for contact map */
+.map {
+	border: 5px solid #fcc200;
+	width: 95%;
+	height: 60%; 
+}
+
+fieldset, input, textarea {
+	margin-bottom: 1%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+input, textarea{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	font-size: 1em;
+}
+
+.btn {
+	padding: 5px 0;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	width: 100%;
+	border: 1px solid #fff;
+	cursor: pointer;
+	grid-column: 1 /span 2;
+}
+
+.btn-res {
+	padding: 5px 0;
+	color: #fff;
+	outline: none;
+	background: transparent;
+	width: 100%;
+	border: 1px solid #fff;
+	cursor: pointer;
+	grid-column: 1 /span 2;
+	margin-bottom: 2em;
+	border-radius: .25em;
+}
+
+/*======================================================================*/
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+@media screen and (min-width: 630px), print {
+	.tablet-desktop, .mob-tab{
+		display: block;
+	}
+
+	.mobile, .desk, #menu-links, .mobile-nav{
+		display: none; 
+	}
+	
+/* Tablet Viewport: Style rule for header*/
+	header {
+		position: static;
+		padding-bottom: 1%;
+	}
+
+	header h1{
+		font-size: 1.75em;
+		text-align: center;
+		animation-name: valiant;
+		animation-duration: 6s;
+		animation-delay: 1s;
+	}
+	
+	@keyframes valiant{
+		0% {color: #fff;}
+		50% {color: #fcc200;}
+		100% {color: #fff;}
+	}
+
+	
+
+/* Tablet Viewport: Style rules for nav area*/
+
+
+nav ul {
+	list-style-type:none ;
+	text-align: center;
+	}
+
+nav li {
+	font-size: 1.25em;
+	font-family: 'Francois One', sans-serif;
+	border-right: 1px solid #fff;
+	font-weight: bold;
+	display: inline-block;
+}
+ 
+
+	nav li:last-child {
+		border-right: none;
+	}
+	nav li a {
+		display: block;
+		color: #fff;
+		padding: 0.1em 0.75em;
+		text-decoration: none;
+	}
+
+	nav li a:hover {
+		color:#000;
+		background-color:white;
+	}
+
+/* Tablet Viewport: Style rules for main content area*/
+	
+/* Tablet Viewport: Style rules for main content */
+	main {
+		clear:left;	
+	}
+
+	#main-index{
+		padding-top: 50em;
+	}
+
+	#main-content {
+		clear: left;
+		border-right: 3px solid #fcc200;
+		border-bottom: 3px solid #fcc200;
+		background-color: #000;
+		padding: 1em 1em;
+		box-shadow: 3px 3px 4px #ccc;
+		align-items: center;
+	}
+	
+	#container{
+		background-image: url("../images/gen-assembly.JPG");
+		background-color: #000;
+		background-size:cover;
+		background-repeat: no-repeat;
+		height: auto;
+		margin:0 auto;
+		background-position: center;
+		padding-top: 0;
+	}
+
+	#container-about{
+		background-image: url("../images/valiant_backg.jpg");
+		background-color: #000;
+		background-size:cover;
+		background-repeat: no-repeat;
+		height: auto;
+		margin: 0 auto;
+		background-position: center;
+		padding-top: 0;
+	}
+
+
+
+	.grid {
+		display: grid;
+		grid-template-columns: 250px 250px;
+		grid-gap: 50px;
+		padding-top: 0;
+		
+	} 
+
+	/* Tablet Viewport: Style rules for news */
+.heading{
+	width: 90%;	
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px auto ;
+	top: 0;
+}
+
+.heading h1{
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.main-news{
+	width: 90%;	
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+.main-news img {
+	width: 100%;
+}
+
+.news-section{
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.news-img{
+	flex:1;
+	margin-right: 40px;	
+	overflow: hidden;
+	border-radius: 5px;
+	border-right: 3px solid #fcc200;
+	border-bottom: 3px solid #fcc200;
+	background-color: #000;
+	padding: 1em 1em;
+	box-shadow: 3px 3px 4px #ccc;
+}
+
+
+.news-content{
+	flex: 1;	
+}
+
+.news-content h2{
+	font-size: 1.25em;
+	margin-bottom: 20px;	
+}
+
+.news-content h3{
+	font-size: 1em;
+	margin-bottom: 20px;	
+}
+
+.news-content p{
+	font-size: .85em;
+	line-height: 2em;
+	text-align: justify;
+}
+
+
+.grid-news-content {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 15px;
+	padding-top: 0;
+	justify-content: center;
+	padding-top: 5em;
+}
+
+.grid-news-content aside{
+	grid-column: 1 / span 3;
+}
+
+.grid-news-content aside p {
+	text-align: center;
+	text-shadow: 5px 5px 8px #000;
+	font-size: 1.25em;
+}
+
+.grid-news-content figure {
+	border-right: 3px solid #fcc200;
+	border-bottom: 3px solid #fcc200;
+	background-color: #000;
+	padding: 1em 1em;
+	box-shadow: 3px 3px 4px #ccc;
+}
+
+.grid-news-content figcaption {
+	text-align: center;
+	font-size: .65em;
+}
+
+
+	#roster-member:hover{
+		transform:scale(1.1)
+	}
+
+	#roster-member:hover{
+		color: #fff;
+		animation-name: rost-name;
+		animation-duration: 3s;
+	}
+
+	@keyframes rost-name{
+		0% {color: #fff;}
+		50% {color: #fcc200;}
+		100% {color: #fff;}
+	}
+
+
+	aside{
+		grid-column: 1 / span 2;
+	}
+
+	aside p {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-shadow: 5px 5px 8px #000;
+}
+	
+	figure {
+		border-top: none;
+		border-left: none;
+		border-right: 3px solid #fcc200;
+		border-bottom: 3px solid #fcc200;
+		background-color: #000;
+		padding: 1em 1em;
+		box-shadow: 3px 3px 4px #ccc;
+		border-radius: 10px;
+	}
+	figure a {
+		color: #fff;
+		text-decoration: none;
+	}
+	figcaption {
+		text-align: center;
+	}
+
+	.action {
+		font-size: .75em;
+		font-weight: bold;
+		text-shadow: 5px 5px 8px gray;
+		text-align: center; 
+	}
+
+/* Style rules for contact map */
+.map {
+	width: 500px;
+	height: 450px;
+}
+
+/* Tablet Viewport: Style rules for form element */
+form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#form {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#form h2{
+	font-size: 1em;
+}
+
+#contact-img {
+	display: flex;
+}  
+
+.input-form{
+	margin-bottom: 30px;
+}
+
+.pos-contact{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.pos-contact .input-form{
+	flex-basis: 48%;
+}
+
+/* Tablet Viewport: Style rule for table */
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	border-top: none;
+	border-left: none;
+	border-right: 3px solid #000;
+	border-bottom: 3px solid #000;
+	background-color: #000;
+	box-shadow: 3px 3px 4px #ccc;
+	width: 70%;
+		
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: 1%;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+	font-size: 1.15em;
+	text-align: center;
+	text-shadow: none;
+}
+tr:nth-child(even){
+	background-color: #fff;
+	color: #000;
+	text-shadow: none;
+}
+
+tr:nth-child(odd){
+	background-color: #fcc200;
+	text-shadow: none;
+}
+
+#exec-tab h2{
+	padding-top: 3em;
+	text-align: center;
+}
+
+/* Tablet Viewport: Style rules for footer */
+footer{
+	padding-top: .15em;
+	background: linear-gradient(to bottom, #000, #000, #000,#fff);
+}
+#email {
+	text-align: center;
+	text-decoration: none; 
+	font-family: 'Martian Mono', monospace; 
+	color: #000; 
+	font-size: 0.75em;
+	margin: auto auto ;
+	font-weight: bolder;
+}
+.copyright{
+	border-top: none;
+	display: block;
+	margin-bottom: 0;
+}
+.social {
+	margin: 0 auto;
+	width: 15%;
+	text-align: center;
+}
+
+.social img {
+	width: 20%;
+	display: inline-block;
+	padding: 4%;
+	}
+.social img:hover {
+	background-color: #fcc200;
+	transform: scale(1.2);
+	}
+
+footer {
+	overflow: auto;
+}
+
+}
+
+
+/*======================================================================*/
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print { 
+
+	.mob-tab, .mobile-nav{
+		display: none;
+	}
+	.desk {
+		display: block;
+	}
+/* Desktop Viewport: Style rule for header*/
+	header{
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+	header h1 {
+		font-size: 1.25em;
+	}
+
+/* Desktop Viewport: Style rules for nav area*/
+	nav{
+		float: right;
+		width: 70%;
+		margin: 2em 2em 0 0;
+	}
+
+	nav ul {
+		text-align: right;
+	}
+
+	nav li {
+		border: none;
+		font-size: 1.25em;
+	}
+
+	nav li a {
+		padding: 0.25em .75em;
+	}
+
+	nav li a:hover {
+		color: black;
+		background-color:white;
+	}
+
+/* Desktop Viewport: Style rules for main content area*/
+	main {
+		clear: left;
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+
+	.action {
+		font-size: .75em;
+		font-weight: bold;
+		text-shadow: 5px 5px 8px gray; 
+	}
+
+/* Style rules for contact map */
+.map {
+	border: 5px solid #fcc200;
+	width: 900px;
+	height: 350px;
+}
+
+/* Desktop Viewport: Style rules for grid */
+	.grid {
+		display: grid;
+		grid-template-columns: 275px 275px 275px;
+		grid-gap: 100px;
+		padding-top: 0;
+		top: auto;
+		margin: 0 auto;
+	} 
+
+	#roster-member:hover{
+		transform:scale(1.3)
+	}
+
+	.grid-news {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 80px;
+		padding-top: 0;
+		justify-content: center;
+		top: auto;
+		max-width: 100%;
+	}
+
+	aside{
+		grid-column: 1 / span 3;
+	}
+
+	aside p {
+		text-align: center;
+		text-shadow: 5px 5px 8px #000;
+
+	}
+	figure {
+		border-right: 3px solid #fcc200;
+		border-bottom: 3px solid #fcc200;
+		background-color: #000;
+		padding: 1em 1em;
+		box-shadow: 3px 3px 4px #ccc;
+	}
+
+	figcaption {
+		text-align: center;
+	}
+
+/* Desktop Viewport: Style rules for forms */
+	.desk .grid-contact{
+		display: grid;
+		top: auto;
+		align-content: center;
+		max-width: 60%;
+		margin: 0 auto;
+
+	}
+	.desk .grid-contact fieldset{
+		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	.desk #contact{
+		text-align: center;
+		top: 0;
+	}
+
+	.desk #form {
+		display: block;
+		max-width: 60%;
+		margin: 0 auto;
+	}
+
+	.desk #form #contact-img{
+		height: 25em;
+		max-width: 60%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 3em;
+	}
+
+	.btn {
+		padding: 5px 0;
+		color: #fff;
+		outline: none;
+		background: transparent;
+		width: 60%;
+		border: 1px solid #fff;
+		cursor: pointer;
+		grid-column: 1 /span 2;
+	}
+
+	.btn-res {
+		margin: 0 auto;
+		padding: 5px 0;
+		color: #fff;
+		outline: none;
+		background: transparent;
+		width: 60%;
+		border: 1px solid #fff;
+		cursor: pointer;
+		grid-column: 1 /span 2;
+		margin-bottom: 2em;
+		border-radius: .25em;
+	}
+
+/* Desktop Viewport: Style rules for news */
+.heading{
+	width: 90%;	
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px auto ;
+	top: 0;
+}
+
+.heading h1{
+	font-size: 1.75em;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.main-news{
+	width: 90%;	
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+
+.main-news img {
+	width: 100%;
+}
+
+.news-section{
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.news-img{
+	flex:1;
+	margin-right: 40px;	
+	overflow: hidden;
+	border-radius: 5px;
+	border-right: 3px solid #fcc200;
+	border-bottom: 3px solid #fcc200;
+	background-color: #000;
+	padding: 1em 1em;
+	box-shadow: 3px 3px 4px #ccc;
+}
+
+
+.news-content{
+	flex: 1;	
+}
+
+.news-content h2{
+	font-size: 1.5em;
+	margin-bottom: 20px;	
+}
+
+.news-content h3{
+	font-size: 1em;
+	margin-bottom: 20px;	
+}
+
+.news-content p{
+	font-size: 1em;
+	line-height: 2em;
+	text-align: justify;
+}
+
+
+.grid-news-content {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 15px;
+	padding-top: 0;
+	justify-content: center;
+	padding-top: 10em;
+}
+
+.grid-news-content aside{
+	grid-column: 1 / span 4;
+}
+
+.grid-news-content aside p {
+	text-align: center;
+	text-shadow: 5px 5px 8px #000;
+	font-size: 1.5em;
+}
+
+.grid-news-content figure {
+	border-right: 3px solid #fcc200;
+	border-bottom: 3px solid #fcc200;
+	background-color: #000;
+	padding: 1em 1em;
+	box-shadow: 3px 3px 4px #ccc;
+}
+
+.grid-news-content figcaption {
+	text-align: center;
+	font-size: .75em;
+}
+
+
+/* Desktop Viewport: Style rules for footer */
+footer{
+	padding-top: .15em;
+	background: linear-gradient(to bottom, #000, #000, #000,#fff);
+}
+#email {
+	text-align: center;
+	text-decoration: none; 
+	font-family: 'Martian Mono', monospace; 
+	color: #000; 
+	font-size: 0.75em;
+	margin: auto auto ;
+	font-weight: bolder;
+}
+/* Desktop Viewport: Style rules for form element*/
+
+}
+
+/*======================================================================*/
+/* MEDIA QUERY FOR LARGE DESKTOP VIEWPORT */
+@media screen and (min-width: 1921px){
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+}
+/*======================================================================*/
+/* MEDIA QUERY FOR PRINT */
+@media print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}
